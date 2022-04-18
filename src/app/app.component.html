@@ -1,0 +1,50 @@
+<div id="banner">
+  <div class="inline-block">
+  
+    <a *ngIf="!this.authService.isLoggedIn" class="btn btn-outline-primary" routerLinkActive="active" routerLink="/log-in">Sign
+      in</a>
+    </div>
+    <div class="inline-block">   
+  
+  <a *ngIf="!this.authService.isLoggedIn" class="btn btn-outline-primary" routerLinkActive="active"
+    routerLinkActive="active" routerLink="/sign-up">Sign up</a>
+  <button (click)="logout()" *ngIf="this.authService.isLoggedIn" type="button" class="btn btn-danger">Logout</button>
+</div>
+</div>
+
+
+<div id="banner">
+  <div class="inline-block">
+    <img src="/assets/images/incinque.jpg" alt="team logo">
+  </div>
+  <div class="inline-block">    
+    <img src="/assets/images/immediaid.jpg" alt="web app logo">
+  </div>
+ </div>
+
+      
+        <p>  - inCinque is a software solutions team dedicated to building healthcare related web applications.</p>
+        <p>  - The name of this web application is Immedi-Aid, standing for immediate aid.</p>
+        <p>  - The idea behind the application is that any individual who faces a situation in which they or any other individual in their proximity needs First Aid or CPR, they can access the application and search for the nearest individual with CPR certification or first aid training, as it might happen they are closer and can arrive earlier than the paramedics.</p>
+        <p>  - The aid seeker enters their location, and the application performs algorithms to identify the closest aid provider. This is acheived using a third party API like Google Maps API. This might be beyond our technical cabaility for the first release, hence we replaced that feature with the capability of manually updating the address.</p>
+      
+      
+<nav>
+  <ul>
+  <li><a routerLinkActive="active" routerLink="/aidproviders-list">View Aid Providers</a></li>
+  
+  <li><a routerLinkActive="active" routerLink="/create-aidprovider">Add Aid Provider</a></li>
+  </ul>
+</nav>
+<h1></h1>
+
+
+
+
+  
+
+
+
+
+
+<router-outlet></router-outlet>
