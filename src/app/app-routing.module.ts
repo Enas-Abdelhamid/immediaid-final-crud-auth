@@ -17,7 +17,7 @@ import { AidProviderCreateComponent } from './components/aid-provider-create/aid
 import { AidProviderListComponent } from './components/aid-provider-list/aid-provider-list.component';
 import { AidProviderEditComponent } from './components/aid-provider-edit/aid-provider-edit.component';
 const routes: Routes = [
-  { path: '', redirectTo: '/log-in', pathMatch: 'full' },
+  { path: '', redirectTo: '/create-aidprovider', pathMatch: 'full' },
   { path: 'create-aidprovider', component: AidProviderCreateComponent },
   { path: 'edit-aidprovider/:id', component: AidProviderEditComponent },
   { path: 'aidproviders-list', component: AidProviderListComponent },
